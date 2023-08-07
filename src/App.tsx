@@ -7,7 +7,7 @@ import EditNote from './components/EditNote'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from 'react-bootstrap'
 
-function App() {
+const App: React.FC = () => {
 
   return (
     <Container className='my-4'>
