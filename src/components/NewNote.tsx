@@ -1,7 +1,11 @@
+import NoteForm from "./NoteForm"
 
-const NewNote = () => {
+const NewNote: React.FC = () => {
     return (
-        <div>NewNote</div>
+        <>
+            <h1>New Note</h1>
+            <NoteForm />
+        </>
     )
 }
 
