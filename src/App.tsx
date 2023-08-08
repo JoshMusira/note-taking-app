@@ -6,8 +6,12 @@ import Note from './components/Note'
 import EditNote from './components/EditNote'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from 'react-bootstrap'
+import { RawNote, Tag } from './types/Types'
+import { useLocalStorage } from './storage/useLocalStorage'
 
 const App: React.FC = () => {
+  const [notes, setNotes] = useLocalStorage<RawNote[]>("NOTES", [])
+  const [tags, setTags] = useLocalStorage<Tag[]>("TAGS", [])
 
   return (
     <Container className='my-4'>
